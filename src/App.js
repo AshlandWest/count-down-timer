@@ -43,7 +43,6 @@ function App() {
   });
 
   useEffect(() => {
-    console.log("in  effect block");
     if (totalTime === 0 && !isPaused) {
       setIsPaused(!isPaused);
     }
