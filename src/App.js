@@ -25,7 +25,6 @@ function App() {
 
   const togglePause = () => {
     setIsPaused(!isPaused);
-    console.log(isPaused);
   };
 
   const updateNumbers = useCallback(() => {
@@ -35,11 +34,6 @@ function App() {
     setOnesMins(Math.floor(minutes % 10));
     setTensSecs(Math.floor(seconds / 10));
     setOnesSecs(Math.floor(seconds % 10));
-    console.log(`time updated to ${totalTime}
-    tensMins ${tensMins}
-    onesMins ${onesMins}
-    tensSecs ${tensSecs}
-    onesSecs ${onesSecs}`);
   });
 
   useEffect(() => {
